@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class StripePaymentImp implements PaymentServices{
     @Override
     public String makePayment(String orderId, Long amount) throws StripeException {
-        Stripe.apiKey = "sk_test_51PP60iEXrGn9iv6liawpF520Uqyi8CHvek7RLJjHwwbBZWwYbEeqcaFYQBS8LkuF6Jz4D6exmnpp3zRkiR1mCxcN00Vc8g0jLO";
+        Stripe.apiKey = "Use secret Key Provided by Stripe";
 
         PriceCreateParams params =
                 PriceCreateParams.builder()
